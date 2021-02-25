@@ -8,7 +8,7 @@ public class hw022 {
             if (arr2[i] < 6) {
                 arr2[i] = arr2[i] * 2;
             }
-            System.out.println(arr2[i]);
+            System.out.print(arr2[i]+" ");
         }
 
 

@@ -13,7 +13,7 @@ public class hw021 {
                 arr1[i] = arr1[i - 1] + 3;
             }
 
-            System.out.println(arr1[i]);
+            System.out.print(arr1[i]+" ");
 
         }
 

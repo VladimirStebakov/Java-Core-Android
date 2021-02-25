@@ -26,15 +26,15 @@ public class hw02 {
             }
 
 
-            System.out.println(arr01[i]);
+            System.out.print(arr01[i]+" ");
 
         }
 //endregion
 
+//region task2
 
 
 
-
-
+//endregion
     }
 }
