@@ -3,21 +3,19 @@ package ru.geekbrains;
 public class hw025 {
 
     public static void main(String[] args) {
-        int min =0;
-        int[] arr5 ={3,2,6,7,2,5,87,54,92};
-        for (int i = 0;i<arr5.length;i++){
-            min = min+0;
+        int iMin=0;
+        int min = 0;
+        int[] arr5 = {8, 2, 1, -9, 2, -25, 87, 54, 2};
+        for (int i = 0; i < arr5.length; i++) {
 
-            if (min>arr5[i]){
+            if (i == 0) min = arr5[0];
+
+            if (min > arr5[i]) {
                 min = arr5[i];
+                iMin = i;
             }
-    System.out.println("минимальное значение" + min);
 
         }
-
-
-
-
-
+        System.out.println("минимальное значение " + min + " его индекс "+ iMin);
     }
 }
