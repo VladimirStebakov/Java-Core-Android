@@ -1,4 +1,5 @@
 package ru.geekbrains;
+//import scanner.;
 
 public class vgod {
 
