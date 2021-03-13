@@ -3,7 +3,7 @@ package ru.geekbrains;
 public class hw024 {
     public static void main(String[] args) {
 
-        int[][] arr5 = new int[5][5];
+        int[][] arr5 = new int[9][9];
         int i, j;
 
 
