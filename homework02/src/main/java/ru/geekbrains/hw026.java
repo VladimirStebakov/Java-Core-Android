@@ -9,7 +9,7 @@ public class hw026 {
 
         int[] arr7 = {1, 2, 3, 4, 5, 6, 7, 8};
 
-        int shift = 22;
+        int shift = 3;
 
         int buf;
 
@@ -28,9 +28,9 @@ public class hw026 {
 
        // System.out.println(buf);
     }System.out.println();
-        for (int q=0;q<arr7.length;q++){
+        for (int k : arr7) {
 
-            System.out.print(arr7[q]);
+            System.out.print(k);
         }
 
     }
