@@ -7,24 +7,36 @@ import java.util.Scanner;
 public class hw03 {
 
     public static void main(String[] args) {
-
-        Random rand = new Random();
         Scanner scanner = new Scanner(System.in);
 
-        int comp = rand.nextInt(10);
-        System.out.println(comp);
+        System.out.println("Хотите отгадать число?");
+        System.out.println("1 - Да  0 - Нет");
+        int pusk = scanner.nextInt();
+        if (pusk == 1) {
 
-        int chel = scanner.NextInt();
+            Random rand = new Random();
 
-        if (chel == comp) {
-            System.out.println("Вы угадали число. Поздравляю!");
-        }
-        if (chel > comp)
-            System.out.println("Ваше число больше загаданного");
-        if (chel < comp)
-            System.out.println("Ваше число меньше загаданного");
+            int chel = scanner.nextInt();
+            int comp = rand.nextInt(10);
+            //System.out.println(comp);
+            for (int i = 0; i < 3; i++) {
+                System.out.println("Введите число от 0 до 10");
+                chel = scanner.nextInt();
+
+                if (chel == comp) {
+                    System.out.println("Вы угадали число. Поздравляю!");
+                    break;
+                }
+                if (chel > comp)
+                    System.out.println("Ваше число больше загаданного");
+                if (chel < comp)
+                    System.out.println("Ваше число меньше загаданного");
+
+            }
+            if (chel != comp) System.out.println("Не угадали(");
+            //System.out.println("Повторить?");
+        }else System.out.println("Как хотите...");
 
 
     }
-
 }
